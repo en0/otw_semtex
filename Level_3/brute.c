@@ -4,7 +4,7 @@
 
 #include "lock.h"
 
-#define SIZE 50
+#define SIZE 20
 
 
 void showTry(int test[]) {
@@ -23,7 +23,7 @@ void next(int test[]) {
 	int len = SIZE;
 	while(--len >= 0) {
 		if(++test[len] <= 8) break;
-		else test[len]=1;
+		else test[len]=test[len-1]; //Slight tweek to keep from testing duplicate numbers.
 	}
 }
 

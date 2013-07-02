@@ -47,6 +47,7 @@ int main(){
 
 	printLock(_l);
 	printf("All locks are open!\n");
+	printf("Your password is d%kj1//..");
 
 
 	return EXIT_SUCCESS;
